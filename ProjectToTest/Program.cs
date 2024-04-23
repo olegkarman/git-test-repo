@@ -2,28 +2,15 @@
 {
     internal class Program
     {
-        //HILLEL ONLINE PRIVATE COMPUTER SCHOOL, C# BASIC MAXIM KABAKOV'S COURSE, HOMEWORK №3 "QUADRATIC", PARHOMENKO YAROSLAV.
+        //HILLEL ONLINE PRIVATE COMPUTER SCHOOL, C# BASIC MAXIM KABAKOV'S COURSE, HOMEWORK №3 "QUADRATIC", PARKHOMENKO YAROSLAV.
 
-        static void Main() //БУЛО ЗНАЙДЕНО ПО ПОСИЛАННІ ДАЛІ, ЯК МОЖНА ПРИБРАТИ АРГУМЕНТИ MAIN — https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/program-structure/main-command-line
+        static void Main()
         {
 
             // See https://aka.ms/new-console-template for more information
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("For what its worth?");
 
             Console.WriteLine($"\nTHIS PROGRAM SOLVING A QUADRATIC EQUATIONS OF THE FORM\n\nAx\u00B2 + Bx + C = 0,\n\nAND THE SECOND FORM\n\n(Px + Q)(Rx + S) = 0,\n\nA, P, B, Q, C, R, S — ARE COEFFITIENTS THE EACH OF THEM IS AN INTEGER NUMBER (MEANS NO FRACTIONAL PART) THAT CAN BE LOWER THAN 0, THE POSSIBLE RANGE OF INTEGER VALUES FOR A SINGLE VARIABLE ON ELECTRONIC CALCULATION MACHINE IS ({int.MinValue}, {int.MaxValue})\n\n");
-            //string ROOTS_TO_STRING = $"{TYPE_OF_QUADRATIC()}{THE_TYPE_OF_QUADRATIC_1()}";
-            //Console.WriteLine("E!");
-            //try
-            //{
-            //Console.WriteLine($"{TYPE_OF_QUADRATIC()},//{THE_TYPE_OF_QUADRATIC_1}");
-            //}
-
-            //catch (FormatException)
-            //{
-            //Console.WriteLine($"{THE_TYPE_OF_QUADRATIC_1()}");
-            //}
-            //Console.WriteLine(ROOTS_TO_STRING);
-            //SHOW_RESULTS_TO_USER();
 
             byte CHECK_CONSOLE_AT_START = 0;
             string SECOND_TYPE = "UNASSIGNED"; //ASSIGNMENT OF STRING VARIABLE THAT REQUIRED FOR OUR MECHANISM. TO READ IT IN "CATCH" PROGRAM.
@@ -105,20 +92,6 @@
             catch (FormatException)
             {
                 Main();
-                /**{
-                //        Console.WriteLine("PLEACE, TYPE P — COEFFICIENT, IF YOU HAVE SECOND TYPE OF EQUATION TO SOLVE, LEFT THE FIELD EMPTY AND PRESS \"ENTER\"");
-                //        P = int.Parse(Console.ReadLine());
-
-                //        Console.WriteLine("PLEACE, TYPE P — COEFFICIENT, IF YOU HAVE SECOND TYPE OF EQUATION TO SOLVE, LEFT THE FIELD EMPTY AND PRESS \"ENTER\"");
-                //        Q = int.Parse(Console.ReadLine());
-
-                //        Console.WriteLine("PLEACE, TYPE P — COEFFICIENT, IF YOU HAVE SECOND TYPE OF EQUATION TO SOLVE, LEFT THE FIELD EMPTY AND PRESS \"ENTER\"");
-                //        R = int.Parse(Console.ReadLine());
-
-                //        Console.WriteLine("PLEACE, TYPE P — COEFFICIENT, IF YOU HAVE SECOND TYPE OF EQUATION TO SOLVE, LEFT THE FIELD EMPTY AND PRESS \"ENTER\"");
-                //        S = int.Parse(Console.ReadLine());
-                }**/
-                //THE_TYPE_OF_QUADRATIC_1();
             }
 
             catch (DivideByZeroException)
@@ -126,21 +99,8 @@
                 Console.WriteLine($"YOUR QUADRATIC EQUATION {A}x\u00B2 + ({B})x + ({C}) = 0 HAS NO ANY SOLUTIONS!");
             }
 
-            //finally
-            //{
-
-            //}
             return $"The first root is equal to {x_1} and the second to {x_2}."; //DATA THAT FIRST METHOD LEFT AFTER PROCESSING.
         }
-
-        //static void SHOW_RESULTS_TO_USER(string? ROOTS)
-        //{
-        //    //ROOTS = TYPE_OF_QUADRATIC();
-        //    //Console.WriteLine(ROOTS);
-        //    //string X_1 = $"{TYPE_OF_QUADRATIC()}"; 
-        //    //string ROOTS = $"The roots of quadratic ";
-        //    //return ROOTS;
-        //}
 
         static string THE_TYPE_OF_QUADRATIC_1(int P = 0, int Q = 0, int R = 0, int S = 0) //THE 'HEAD' OF SECOND METHOD WITH ASSIGNED VARIABLES.
         {
@@ -247,11 +207,5 @@
 
             return $"In case of the different one equation, the first root is {x_1} and the second root is {x_2}."; //THE INFORMATION THAT SECOND METHOD CREATING IN A RESULT OF ITS WORK.
         }
-
-        //static void SHOW_RESULTS_TO_USER_1(string? ROOTS)
-        //{
-        //    ROOTS = THE_TYPE_OF_QUADRATIC_1();
-        //    Console.WriteLine(ROOTS);
-        //}
     }
 }
