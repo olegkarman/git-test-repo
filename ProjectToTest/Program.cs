@@ -28,7 +28,6 @@
                 SECOND_TYPE = THE_TYPE_OF_QUADRATIC_1(); //STARTING TO PROCESS SECOND METHOD.
                 Console.WriteLine($"\n{SECOND_TYPE}");
             }
-
         }
 
         static string TYPE_OF_QUADRATIC(int A = 0, int B = 0, int C = 0)//CREATING METHOD WITH ASSIGNED VARIABLES.
@@ -68,7 +67,6 @@
                 Console.WriteLine($"\nThe root of equation is equal to {x_1}.");
                 Main();
                 //return $"The root of equation is equal to {x_1}.";
-
             }
 
             try
@@ -150,7 +148,6 @@
                 R = int.Parse(Console.ReadLine());
 
                 R_CHECK = CONST_0 / R; //CHECKS IF R = 0.
-
             }
 
             catch (FormatException)
@@ -191,10 +188,6 @@
 
             catch (FormatException)
             {
-                //P = 0;
-                //Q = 0;
-                //R = 0;
-                //S = 0;
                 Main();
                 //TYPE_OF_QUADRATIC(); //REDIRECT ECM TO FIRST METHOD IF IN SECOND USER MADE FORMAT MISTAKE OF INPUT.
             }
