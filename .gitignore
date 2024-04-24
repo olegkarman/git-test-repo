@@ -68,5 +68,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+
 /ProjectToTest/bin
 /ProjectToTest/obj
