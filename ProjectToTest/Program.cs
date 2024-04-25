@@ -2,8 +2,6 @@
 {
     internal class Program
     {
-        //HILLEL ONLINE PRIVATE COMPUTER SCHOOL, C# BASIC MAXIM KABAKOV'S COURSE, HOMEWORK №3 "QUADRATIC", PARKHOMENKO YAROSLAV.
-
         static void Main()
         {
             // See https://aka.ms/new-console-template for more information
