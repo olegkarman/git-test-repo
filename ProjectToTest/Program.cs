@@ -2,13 +2,12 @@ namespace HOMEWORK3_QUADRATIC_YPARKHOMENKO
 {
     internal class Program
     {
+        //HILLEL ONLINE PRIVATE COMPUTER SCHOOL, C# BASIC MAXIM KABAKOV'S COURSE, HOMEWORK №3 "QUADRATIC", PARKHOMENKO YAROSLAV.
+
         static void Main()
         {
             // See https://aka.ms/new-console-template for more information
-            Console.WriteLine("Hello, World!");     // INITIAL HELLO.
-            Console.WriteLine("Hello from Daniil!");    // HELLO FROM PROGRAMIST DANIIL.
-            Console.WriteLine("Hello from Nina!");      // HELLO FROM PROGRAMIST NINA.
-            Console.WriteLine("For what its worth?");   // HELLO FROM PROGRAMIST YAROSLAV.
+            Console.WriteLine("For what its worth?");
 
             Console.WriteLine($"\nTHIS PROGRAM SOLVING A QUADRATIC EQUATIONS OF THE FORM\n\nAx\u00B2 + Bx + C = 0,\n\nAND THE SECOND FORM\n\n(Px + Q)(Rx + S) = 0,\n\nA, P, B, Q, C, R, S — ARE COEFFITIENTS THE EACH OF THEM IS AN INTEGER NUMBER (MEANS NO FRACTIONAL PART) THAT CAN BE LOWER THAN 0, THE POSSIBLE RANGE OF INTEGER VALUES FOR A SINGLE VARIABLE ON ELECTRONIC CALCULATION MACHINE IS ({int.MinValue}, {int.MaxValue})\n\n");
 
