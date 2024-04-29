@@ -1,4 +1,6 @@
-﻿namespace ProjectToTest
+﻿using System.Reflection;
+
+namespace ProjectToTest
 {
     internal class User
     {
@@ -10,6 +12,10 @@
             FirstName = firstName;
             LastName = lastName;
             Age = age;
+        }
+        public override string ToString()
+        {
+            return $"Hi, my name is {FirstName} and last name {LastName}. I am {Age} years old.";
         }
     }
 }
