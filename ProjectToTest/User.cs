@@ -1,21 +1,31 @@
-﻿using System.Reflection;
-
-namespace ProjectToTest
+﻿namespace ProjectToTest
 {
+    internal enum UserGender
+    {
+        Male,
+        Female,
+        Unknown
+    }
     internal class User
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
-        public User(string firstName, string lastName, int age)
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public int Age { get; }
+        public UserGender Gender { get; set; }
+
+        public User()
         {
-            FirstName = firstName;
-            LastName = lastName;
+        
+        }
+        public User(int age)
+        {
             Age = age;
         }
+
         public override string ToString()
         {
-            return $"Hi, my name is {FirstName} and last name {LastName}. I am {Age} years old.";
+            var ageString = Age < 10 ? "I am a baby" : $"I am {Age} years old";
+            return $"Hi, my name is {FirstName} and last name {LastName}. {ageString}. I am {Gender}.";
         }
     }
 }
